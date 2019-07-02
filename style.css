@@ -1,0 +1,19 @@
+body {
+    background: #fefefe;
+}
+
+.mainHeader {
+    color: rgb(156, 6, 6);
+}
+
+.sectionHeader {
+    color: rgb(16, 139, 16);
+}
+
+p {
+    color: rgb(110, 35, 35);
+}
+
+.subPage {
+    color: fuchsia;
+}
