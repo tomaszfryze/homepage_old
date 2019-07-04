@@ -1,19 +1,68 @@
 body {
-    background: #666666;
+    background: #ececec;
 }
 
-.mainHeader {
+.main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.main__header {
+    color: goldenrod;
+    padding: 5px 0;
+    border-top: 3px dashed black;
+    border-bottom: 3px dashed black;
+    border-radius: 1px;
+    text-align: center;
+}
+
+.navigation {
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background: brown;
+    top: 0px;
+}
+
+.navigation__link {
+    color: white;
+    text-decoration: none;
+}
+
+.to_do {}
+
+.to-do__header {
+    color: rgb(60, 88, 60);
+    border-bottom: 1px dotted red;
+}
+
+.to-do__day {
     color: rgb(156, 6, 6);
+    text-decoration: none;
+    padding: 10px;
 }
 
-.sectionHeader {
-    color: rgb(16, 139, 16);
+.to-do__link {
+    text-decoration: none;
+    color: blue;
+    font-size: 70%;
 }
 
-p {
-    color: rgb(110, 35, 35);
+.realization {}
+
+.realization__header {
+    color: rgb(60, 88, 60);
+    border-bottom: 1px dotted red;
 }
 
-.subPage {
-    color: fuchsia;
+.realization__day {
+    color: green;
+    padding: 10px;
+}
+
+.realization__day--weekend {
+    color: red;
 }

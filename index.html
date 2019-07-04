@@ -9,60 +9,55 @@
 	<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
-	<header>
-		<a href="index.html">Strona główna</a>
-		<a href="podstrona1.html">Angielski</a>
+<body class="body">
+	<header class="navigation">
+		<a class="navigation__link" href="index.html">Strona główna</a>
+		<a class="navigation__link" href="podstrona1.html">Angielski</a>
 	</header>
+	<br />
 
-	<main>
+	<main class="main">
 		<header>
-			<h1 CLASS="mainHeader">
+			<h1 CLASS="main__header">
 				Tomasz Fryze - plan tygodnia
 			</h1>
 		</header>
-		<section>
-			<h2 class="sectionHeader">TO-DO</h2>
-			<p>
-				<a href="podstrona1.html">1. Angielski - YouTube</a>
-				<br /><a href=podstrona2.html>2. Angielski - podcast</a>
-				<br /><a href=podstrona3.html>3. Angielski - aplikacja x2</a>
-				<br /><a href=podstrona4.html>4. Angielski - książka</a>
-				<br /><a href=podstrona5.html>5. Angielski - Tutlo</a>
-				<br /><a href=podstrona6.html>6. Książka</a>
-				<br /><a href=podstrona7.html>7. Frontend</a>
-				<br /><a href=podstrona8.html>8. GIT</a>
-				<br /><a href=podstrona9.html>9. Siłownia</a>
+		<section class=to-do>
+			<h2 class="to-do__header">TO-DO</h2>
+			<h3 class="to-do__day to-do__day--js" href="podstrona1.html">1. Angielski - YouTube</a>
 				<br />
-				<a href="#realizacja">Przejdź do realizacji</a>
-			</p>
+				<h3 class="to-do__day to-do__day--js" href=podstrona2.html>2. Angielski - podcast</a>
+					<br />
+					<h3 class="to-do__day to-do__day--js" href=podstrona3.html>3. Angielski - aplikacja x2</a>
+						<br />
+						<h3 class="to-do__day to-do__day--js" href=podstrona4.html>4. Angielski - książka</a>
+							<br />
+							<h3 class="to-do__day to-do__day--js" href=podstrona5.html>5. Angielski - Tutlo</a>
+								<br />
+								<h3 class="to-do__day to-do__day--js" href=podstrona6.html>6. Książka</a>
+									<br />
+									<h3 class="to-do__day to-do__day--js" href=podstrona7.html>7. Frontend</a>
+										<br />
+										<h3 class="to-do__day to-do__day--js" href=podstrona8.html>8. GIT</a>
+											<br />
+											<h3 class="to-do__day to-do__day--js" href=podstrona9.html>9. Siłownia</a>
+												<br /><br />
+												<a class="to-do__link" href="#realization">Przejdź do
+													realizacji</a>
+												<br />
 		</section>
-		<section id="realizacja">
-			<h2 class="sectionHeader">Realizacja</h2>
-			<section>
-				<h3>Poniedziałek</h3>
-			</section>
-			<section>
-				<h3>Wtorek</h3>
-			</section>
-			<section>
-				<h3>Środa</h3>
-			</section>
-			<section>
-				<h3>Czwartek</h3>
-			</section>
-			<section>
-				<h3>Piątek</h3>
-			</section>
-			<section>
-				<h3>Sobota</h3>
-			</section>
-			<section>
-				<h3>Niedziela</h3>
-			</section>
+		<section class="realization" id="realization">
+
+			<h2 class="realization__header">Realizacja</h2>
+
+			<h3 class="realization__day">Poniedziałek</h3>
+			<h3 class="realization__day">Wtorek</h3>
+			<h3 class="realization__day">Środa</h3>
+			<h3 class="realization__day">Czwartek</h3>
+			<h3 class="realization__day">Piątek</h3>
+			<h3 class="realization__day	realization__day--weekend">Sobota</h3>
+			<h3 class="realization__day realization__day--weekend">Niedziela</h3>
 		</section>
-
-
 
 	</main>
 	<Footer>
