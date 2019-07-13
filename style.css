@@ -1,5 +1,6 @@
 body {
     background: #ececec;
+    background: linear-gradient(227deg, rgba(1, 115, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 .main {
@@ -9,7 +10,7 @@ body {
     padding: 10px;
 }
 
-.main__header {
+.header__title {
     color: goldenrod;
     padding: 5px 0;
     border-top: 3px dashed black;
@@ -18,13 +19,28 @@ body {
     text-align: center;
 }
 
-.navigation {
+.site-header {
     position: fixed;
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
     background: brown;
     top: 0px;
+}
+
+.navigation {}
+
+.navigation__item {
+    display: block;
+    margin: 0px 8px;
+}
+
+.navigation__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .navigation__link {
