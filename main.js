@@ -4,7 +4,7 @@ const main__header = document.querySelector('.header__title');
 
 console.log(main__header.innerHTML);
 
-main__header.innerHTML = 'Pozdro!';
+//main__header.innerHTML = 'Pozdro!';
 
 const day = document.querySelectorAll('.to-do__day--js');
 
@@ -24,3 +24,12 @@ const welcome1 = (name, age) => {
     console.log(`Cześć, mam na imię ${name} i mam ${age} lat`);
 }
 welcome1(name, age);
+
+const navigationButton = document.querySelector('.navigation__button--js')
+
+navigationButton.addEventListener('click', (e) => {
+    const navigationList = document.querySelector('.navigation__list--js');
+    navigationList.classList.toggle('navigation__list--visible');
+    const navigationButton = document.querySelector('.navigation__button');
+    navigationButton.innerHTML = "X";
+})

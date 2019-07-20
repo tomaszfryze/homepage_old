@@ -1,6 +1,6 @@
 body {
     background: #ececec;
-    background: linear-gradient(227deg, rgba(1, 115, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: #2E2240;
 }
 
 .main {
@@ -63,11 +63,17 @@ body {
 
 .to-do__link {
     text-decoration: none;
-    color: blue;
+    color: white;
     font-size: 70%;
 }
 
-.realization {}
+.realization__grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 40px 100px;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
 
 .realization__header {
     color: rgb(60, 88, 60);
@@ -75,10 +81,50 @@ body {
 }
 
 .realization__day {
-    color: green;
+    background: black;
+    color: white;
     padding: 10px;
+    border-radius: 100px;
+    text-align: center;
 }
 
 .realization__day--weekend {
     color: red;
+}
+
+@media (max-width: 640px) {
+    .body {
+        background: rgb(4, 51, 24)
+    }
+    .realization__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px;
+    }
+    .navigation__list {
+        display: none;
+        flex-direction: column;
+    }
+    .navigation__button {
+        display: flex;
+        border: none;
+        background: none;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+    }
+    .site-header {
+        min-height: 48px;
+    }
+    .navigation__item {
+        margin: 8px;
+    }
+    .navigation__list--visible {
+        display: flex;
+    }
+}
+
+@media (min-width: 641px) {
+    .navigation__button {
+        display: none;
+    }
 }

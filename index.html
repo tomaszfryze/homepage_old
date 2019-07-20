@@ -12,11 +12,13 @@
 <body class="body">
 	<header class="site-header">
 		<nav class="navigation">
-			<ul class="navigation__list">
+			<ul class="navigation__list navigation__list--js">
 				<li class="navigation__item"><a class="navigation__link" href="index.html">Strona główna</a></li>
 				<li class="navigation__item"><a class="navigation__link" href="podstrona1.html">Angielski</a></li>
 			</ul>
+
 		</nav>
+		<button class="navigation__button navigation__button--js" aria-label="Otwórz menu">☰</button>
 	</header>
 	<br />
 
@@ -29,39 +31,31 @@
 		</header>
 		<section class=to-do>
 			<h2 class="to-do__header">TO-DO</h2>
-			<h3 class="to-do__day to-do__day--js" href="podstrona1.html">1. Angielski - YouTube</a>
-				<br />
-				<h3 class="to-do__day to-do__day--js" href=podstrona2.html>2. Angielski - podcast</a>
-					<br />
-					<h3 class="to-do__day to-do__day--js" href=podstrona3.html>3. Angielski - aplikacja x2</a>
-						<br />
-						<h3 class="to-do__day to-do__day--js" href=podstrona4.html>4. Angielski - książka</a>
-							<br />
-							<h3 class="to-do__day to-do__day--js" href=podstrona5.html>5. Angielski - Tutlo</a>
-								<br />
-								<h3 class="to-do__day to-do__day--js" href=podstrona6.html>6. Książka</a>
-									<br />
-									<h3 class="to-do__day to-do__day--js" href=podstrona7.html>7. Frontend</a>
-										<br />
-										<h3 class="to-do__day to-do__day--js" href=podstrona8.html>8. GIT</a>
-											<br />
-											<h3 class="to-do__day to-do__day--js" href=podstrona9.html>9. Siłownia</a>
-												<br /><br />
-												<a class="to-do__link" href="#realization">Przejdź do
-													realizacji</a>
-												<br />
+			<div class="to-do__day to-do__day--js" href="podstrona1.html">1. Angielski - YouTube</div>
+			<div class="to-do__day to-do__day--js" href=podstrona2.html>2. Angielski - podcast</div>
+			<div class="to-do__day to-do__day--js" href=podstrona3.html>3. Angielski - aplikacja x2</div>
+			<div class="to-do__day to-do__day--js" href=podstrona4.html>4. Angielski - książka</div>
+			<div class="to-do__day to-do__day--js" href=podstrona5.html>5. Angielski - Tutlo</div>
+			<div class="to-do__day to-do__day--js" href=podstrona6.html>6. Książka</div>
+			<div class="to-do__day to-do__day--js" href=podstrona7.html>7. Frontend</div>
+			<div class="to-do__day to-do__day--js" href=podstrona8.html>8. GIT</div>
+			<div class="to-do__day to-do__day--js" href=podstrona9.html>9. Siłownia</div>
+			<a class="to-do__link" href="#realization">Przejdź do
+				realizacji</a>
+			<br />
 		</section>
 		<section class="realization" id="realization">
 			<br />
 			<h2 class="realization__header">Realizacja</h2>
-
-			<h3 class="realization__day">Poniedziałek</h3>
-			<h3 class="realization__day">Wtorek</h3>
-			<h3 class="realization__day">Środa</h3>
-			<h3 class="realization__day">Czwartek</h3>
-			<h3 class="realization__day">Piątek</h3>
-			<h3 class="realization__day	realization__day--weekend">Sobota</h3>
-			<h3 class="realization__day realization__day--weekend">Niedziela</h3>
+			<div class="realization__grid">
+				<div class="realization__day">Poniedziałek</div>
+				<div class="realization__day">Wtorek</div>
+				<div class="realization__day">Środa</div>
+				<div class="realization__day">Czwartek</div>
+				<div class="realization__day">Piątek</div>
+				<div class="realization__day realization__day--weekend">Sobota</div>
+				<div class="realization__day realization__day--weekend">Niedziela</div>
+			</div>
 		</section>
 
 	</main>
